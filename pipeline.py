@@ -26,8 +26,8 @@ house_data.head(5)
 #select categorical variables
 cat_var = list(house_data.select_dtypes(include=["O"]).columns)
 num_var = [c for c in house_data.columns if c not in cat_var+['SalePrice']]
-id_var_cols = [house_data.columns.get_loc(c) for c in cat_var if c in train_data]
-id_num_cols = [house_data.columns.get_loc(c) for c in num_var if c in train_data]
+id_var_cols = [house_data.columns.get_loc(c) for c in cat_var if c in house_data]
+id_num_cols = [house_data.columns.get_loc(c) for c in num_var if c in house_data]
 cat_var
 
 #define steps for pipelines
