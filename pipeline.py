@@ -75,3 +75,10 @@ plt.ylim(0,800000)
 plt.xlabel('Actual HousePrice - ytest')
 plt.ylabel('Predicted HousePrice- ypred')
 plt.show()
+
+print(1+1)
+print("this is not allowed")
+
+print(30+40)
+print(1+1)
+print("this is not allowed")
